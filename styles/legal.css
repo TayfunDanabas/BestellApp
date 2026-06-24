@@ -1,0 +1,119 @@
+.legal-page {
+    max-width: 50rem;
+    margin: 3.13rem auto 5rem;
+    padding: 0 1.5rem;
+    color: rgba(54, 53, 52, 1);
+}
+
+.legal-page h1 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 1.5rem;
+}
+
+.legal-page h2 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    margin-top: 1.88rem;
+    margin-bottom: 0.63rem;
+    color: rgba(231, 108, 31, 1);
+}
+
+.legal-page p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.cookie-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: rgba(253, 234, 220, 1);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.cookie-option-text h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.31rem;
+}
+
+.cookie-option-text p {
+    font-size: 0.95rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.4rem;
+    height: 1.9rem;
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(54, 53, 52, 0.3);
+    border-radius: 1.9rem;
+    transition: 0.2s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.switch input:checked+.slider {
+    background-color: rgba(231, 108, 31, 1);
+}
+
+.switch input:checked+.slider::before {
+    transform: translateX(1.5rem);
+}
+
+.switch input:disabled+.slider {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.cookie-actions {
+    margin-top: 2rem;
+}
+
+.cookie-actions .btn-buy {
+    margin: 0;
+}
+
+.cookie-saved-msg {
+    display: none;
+    margin-top: 1rem;
+    color: rgba(231, 108, 31, 1);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .legal-page {
+        margin-bottom: 7rem;
+    }
+
+    .cookie-option {
+        flex-direction: row;
+    }
+}

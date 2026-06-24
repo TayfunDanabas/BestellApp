@@ -1,0 +1,45 @@
+footer {
+    background-color: rgba(231, 108, 31, 1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.13rem;
+    gap: 4.38rem;
+    color: white;
+    padding: 3.13rem 7.5rem;
+    font-size: 1.25rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.31rem;
+}
+
+.footer-brand img {
+    width: 1.25rem;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 3.13rem clamp(1.5rem, 7.5vw, 7.5rem) 8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    footer {
+        padding: 50px max(50px, calc(50% - 720px));
+    }
+}

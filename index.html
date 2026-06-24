@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/legal.css">
+    <title>BestellApp</title>
+</head>
+
+<body onload="init()">
+
+    <header>
+        <div class="header-content content-wrapper">
+            <div class="header-left">
+                <img src="./assets/icons/BestellAppLogo.svg" alt="BestellApp Logo">
+                <p>Bestell<br><span class="app-name">APP</span></p>
+            </div>
+            <img src="./assets/icons/menulogo.svg" alt="Menü-Icon">
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img class="hero-bg" src="./assets/img/HeaderBG.jpg" alt="Burger House Restaurant Hintergrundbild">
+            <img class="restaurant-icon" src="./assets/icons/HeaderBurger.png" alt="Burger House Logo">
+            <section class="hero-text">
+                <section class="hero-title">
+                    <h1><mark>Burger</mark>House</h1>
+                    <img src="./assets/icons/Rating.png" alt="5 Sterne Bewertung">
+                </section>
+                <p>The best of Burgers, Pizza, and Greens, all in one great place.</p>
+            </section>
+        </section>
+
+        <section class="menu-bar">
+            <div class="menu-bar-inner">
+                <img src="./assets/icons/BurgerLogo.svg" alt="Burger-Icon">
+                <h2 class="desktop-text">Burger & Sandwiches</h2>
+                <h2 class="mobile-text">Burger</h2>
+            </div>
+        </section>
+
+        <section class="content">
+
+            <section class="menu" id="menu"></section>
+
+            <aside id="shopping-cart" class="cart">
+                <h2>Your Basket</h2>
+
+                <section id="shopping-cart-content"></section>
+
+                <section class="cart-sum">
+                    <p class="cart-row"><span>Subtotal:</span> <span id="sub-total-price">0,00 €</span></p>
+                    <p class="cart-row" id="delivery">Delivery Fee: <span>5,99 €</span></p>
+                    <hr>
+                    <p class="cart-row" id="sum-total">
+                        <span class="cart-sum-label">Total:</span>
+                        <span id="total-price">0,00 €</span>
+                    </p>
+                </section>
+
+                <button onclick="buyNow()" id="total-price-button" class="btn-buy">Buy Now (0,00€)</button>
+            </aside>
+
+        </section>
+
+        <dialog closedby="any" id="dialog-input"></dialog>
+
+        <section class="nav-bar">
+            <button class="nav-btn"><img src="./assets/icons/Home.svg" alt="Home Icon"></button>
+            <button class="nav-btn"><img src="./assets/icons/person.svg" alt="Person Icon"></button>
+            <button class="nav-btn"><img src="./assets/icons/takeout_dining_2.png" alt="BestellApp Icon"></button>
+            <button onclick="mobileShoppingCart()" class="nav-btn"><img src="./assets/icons/shopping_cart (1).svg" alt="Warenkorb Icon"><span id="cart-amount" class="cart-badge">0</span></button>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer-brand">
+            <img src="./assets/icons/CopyrightLogo.svg" alt="Copyright-Symbol">
+            <p>2026 BurgerHouse</p>
+        </section>
+        <a href="./imprint.html" class="footer-link">Imprint</a>
+        <a href="./cookie-preferences.html" class="footer-link">Cookie Preferences</a>
+    </footer>
+
+</body>
+<script src="./scripts/template.js"></script>
+<script src="./scripts/dishes.js"></script>
+<script src="./scripts/script.js"></script>
+
+</html>
