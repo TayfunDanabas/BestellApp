@@ -34,7 +34,7 @@ function getDialogTemplate() {
     return `
     <section class="dialog-content">
         <button class="x-btn" onclick="closeAllDialoge()">x</button>
-        <img src="./assets/icons/DeliveryTruckLogo.svg" alt="">
+        <img src="./assets/icons/DeliveryTruckLogo.png" alt="">
         <h3>Order Confirmed!</h3>
         <p>Your food is on it's way!</p>
     </section>`;
