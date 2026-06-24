@@ -204,7 +204,7 @@ hr {
 }
 
 .dish-info h3 {
-    font-size: clamp(1.25rem, 2vw, 1.7rem);
+    font-size: clamp(1.75rem, 2vw, 1.7rem);
     font-weight: 700;
 }
 
