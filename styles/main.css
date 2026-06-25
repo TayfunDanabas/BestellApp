@@ -448,7 +448,7 @@ hr {
         position: fixed;
         top: 400px;
         width: 97vw;
-        height: 64vh;
+        height: 90vw;
         background-color: rgba(54, 53, 52, 1);
         border-radius: 1.25rem 1.25rem 0 0;
         z-index: 999;
