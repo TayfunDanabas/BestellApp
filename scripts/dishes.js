@@ -23,6 +23,36 @@ const dishes = [
     "price": 15.90,
     "ingredients": ["Chicken", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
   },
+  {
+    "name": "Big chicken burger",
+    "image": "./assets/img/Dinner 4.jpg",
+    "price": 15.90,
+    "ingredients": ["Chicken", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
+  },
+  {
+    "name": "Big chicken burger",
+    "image": "./assets/img/Dinner 4.jpg",
+    "price": 15.90,
+    "ingredients": ["Chicken", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
+  },
+  {
+    "name": "Big chicken burger",
+    "image": "./assets/img/Dinner 4.jpg",
+    "price": 15.90,
+    "ingredients": ["Chicken", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
+  },
+  {
+    "name": "Big chicken burger",
+    "image": "./assets/img/Dinner 4.jpg",
+    "price": 15.90,
+    "ingredients": ["Chicken", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
+  },
+  {
+    "name": "Big chicken burger",
+    "image": "./assets/img/Dinner 4.jpg",
+    "price": 15.90,
+    "ingredients": ["Chicken", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
+  },
   
   
 ];

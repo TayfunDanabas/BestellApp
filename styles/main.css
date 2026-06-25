@@ -373,6 +373,9 @@ hr {
 }
  
 @media screen and (max-width: 1024px) {
+    .cart h2 {
+    margin-top: 0rem;
+}
     .desktop-text {
         display: none;
     }
@@ -449,10 +452,13 @@ hr {
         top: auto;
         bottom: 75px;
         width: 97vw;
+        height: auto;
+        max-height: min(48rem, calc(100vh - 100px));
         background-color: rgba(54, 53, 52, 1);
         border-radius: 1.25rem 1.25rem 0 0;
         z-index: 999;
         min-width: 0;
+        overflow-y: auto;
     }
  
     .nav-bar {

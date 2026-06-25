@@ -1,6 +1,7 @@
 let shoppingCart = {};
 let subtotal = 0;
 let total = 0;
+let scrollPosition = 0;
 
 function init() {
     renderDishes();
@@ -8,7 +9,6 @@ function init() {
 
     document.getElementById('dialog-input')
         .addEventListener('close', DialogClose);
-
     document.addEventListener('click', closeCartOnOutsideClick);
 }
 
@@ -26,6 +26,7 @@ function closeCartOnOutsideClick(event) {
         mobileShoppingCart();
     }
 }
+
 function DialogClose() {
     shoppingCart = {};
     renderCart();
@@ -132,8 +133,6 @@ function resetAddButtons() {
         btn.classList.remove("btn-add--active");
     }
 }
-
-let scrollPosition = 0;
 
 function lockScroll() {
     scrollPosition = window.scrollY;
