@@ -446,9 +446,9 @@ hr {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 400px;
+        top: auto;
+        bottom: 75px;
         width: 97vw;
-        height: 90vw;
         background-color: rgba(54, 53, 52, 1);
         border-radius: 1.25rem 1.25rem 0 0;
         z-index: 999;
