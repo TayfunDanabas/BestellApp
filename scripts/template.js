@@ -18,13 +18,18 @@ function getTemplateDishes(i) {
 function getCartTemplate(key) {
     return `
     <section class="cart-item">
-        <p>${shoppingCart[key]} x ${dishes[key].name}</p>
+        <div class="cart-title">
+            <span class="cart-amount">${shoppingCart[key]}x</span>
+            <span>${dishes[key].name}</span>
+        </div>
+
         <section class="cart-item-footer">
             <section class="cart-item-controls">
                 <button onclick="changeAmount(${key}, -1)">-</button>
-                ${shoppingCart[key]}
+                <span class="amount">${shoppingCart[key]}</span>
                 <button onclick="changeAmount(${key}, +1)">+</button>
             </section>
+
             <p>${(shoppingCart[key] * dishes[key].price).toFixed(2).replace(".", ",")}€</p>
         </section>
     </section>`;

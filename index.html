@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/BestellAppLogo.svg">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
@@ -50,7 +51,8 @@
 
             <section class="menu" id="menu"></section>
 
-            <aside id="shopping-cart" class="cart">
+            <section id="shopping-cart" class="cart">
+                <button class="x-btn cart-close-btn" onclick="mobileShoppingCart()">x</button>
                 <h2>Your Basket</h2>
 
                 <section id="shopping-cart-content"></section>
@@ -66,7 +68,7 @@
                 </section>
 
                 <button onclick="buyNow()" id="total-price-button" class="btn-buy">Buy Now (0,00€)</button>
-            </aside>
+            </section>
 
         </section>
 

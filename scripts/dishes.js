@@ -21,7 +21,7 @@ const dishes = [
     "name": "Big chicken burger",
     "image": "./assets/img/Dinner 4.jpg",
     "price": 15.90,
-    "ingredients": ["Chicken", "Cheese", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
+    "ingredients": ["Chicken", "Tomatoes", "Lettuce", "Onion", "Bell pepper"]
   },
   
   
