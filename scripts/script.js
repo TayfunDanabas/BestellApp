@@ -6,7 +6,6 @@ let scrollPosition = 0;
 function init() {
     renderDishes();
     renderCart();
-
     document.getElementById('dialog-input')
         .addEventListener('close', DialogClose);
     document.addEventListener('click', closeCartOnOutsideClick);
@@ -14,14 +13,11 @@ function init() {
 
 function closeCartOnOutsideClick(event) {
     const cartRef = document.getElementById('shopping-cart');
-
     if (!cartRef.classList.contains('cart--mobile')) {
         return;
     }
-
     const clickedInsideCart = cartRef.contains(event.target);
     const clickedCartToggleButton = event.target.closest('.nav-bar button:last-child');
-
     if (!clickedInsideCart && !clickedCartToggleButton) {
         mobileShoppingCart();
     }
@@ -71,13 +67,10 @@ function renderCart() {
 
     cartSumRef.style.display = "flex";
     buyButtonRef.style.display = "block";
-
     cartRef.innerHTML = "";
-
     for (const key of Object.keys(shoppingCart)) {
         cartRef.innerHTML += getCartTemplate(key);
     }
-
     cartRef.scrollTop = previousScrollTop;
 }
 
@@ -120,7 +113,6 @@ function buyNow() {
     if (Object.keys(shoppingCart).length === 0) {
         return;
     }
-
     document.getElementById('shopping-cart').classList.remove("cart--mobile");
     unlockScroll();
     openDialoge();
