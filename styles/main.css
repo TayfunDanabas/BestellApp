@@ -126,6 +126,7 @@ h1 mark {
     gap: 0.625rem;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: auto;
 }
 .cart-title {
     display: flex;

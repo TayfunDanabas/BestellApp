@@ -25,9 +25,9 @@ function getCartTemplate(key) {
 
         <section class="cart-item-footer">
             <section class="cart-item-controls">
-                <button onclick="changeAmount(${key}, -1)">-</button>
+                <button onclick="changeAmount(${key}, -1, event)">-</button>
                 <span class="amount">${shoppingCart[key]}</span>
-                <button onclick="changeAmount(${key}, +1)">+</button>
+                <button onclick="changeAmount(${key}, +1, event)">+</button>
             </section>
 
             <p>${(shoppingCart[key] * dishes[key].price).toFixed(2).replace(".", ",")}€</p>

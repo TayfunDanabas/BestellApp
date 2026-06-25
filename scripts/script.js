@@ -55,6 +55,7 @@ function renderCart() {
     const cartRef = document.getElementById('shopping-cart-content');
     const cartSumRef = document.querySelector('.cart-sum');
     const buyButtonRef = document.getElementById('total-price-button');
+    const previousScrollTop = cartRef.scrollTop;
 
     if (Object.keys(shoppingCart).length === 0) {
         cartRef.innerHTML = `
@@ -76,6 +77,8 @@ function renderCart() {
     for (const key of Object.keys(shoppingCart)) {
         cartRef.innerHTML += getCartTemplate(key);
     }
+
+    cartRef.scrollTop = previousScrollTop;
 }
 
 function calculateSum() {
@@ -92,7 +95,10 @@ function calculateSum() {
     document.getElementById('cart-amount').innerHTML = amount;
 }
 
-function changeAmount(key, value) {
+function changeAmount(key, value, event) {
+    if (event) {
+        event.stopPropagation();
+    }
     shoppingCart[key] += value;
     if (shoppingCart[key] <= 0) {
         delete shoppingCart[key];
